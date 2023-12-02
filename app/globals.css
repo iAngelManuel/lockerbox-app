@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-[90%] md:max-w-[80%]
+  }
+
+  h1 {
+    @apply text-3xl font-extrabold
+  }
+
+  h2 {
+    @apply text-2xl font-bold
+  }
+
+  h3 {
+    @apply text-lg font-bold
+  }
+  .card__container {
+    @apply grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-4 
+  }
+
+  .card__item {
+    @apply p-10 border rounded-md shadow-sm flex flex-col items-center justify-evenly hover:scale-105 cursor-pointer transition-all
+  }
+
+  .product {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4
+  }
+
+  .button {
+    @apply bg-indigo-600 p-2 rounded-lg w-full text-white hover:bg-indigo-700 hover:scale-[1.015] transition-all 
+  }
+
+  .banner{
+    @apply bg-red-600 text-white uppercase rounded-xl flex justify-between px-[5rem] items-center mb-4
+  }
+
+  .banner__title{
+    @apply font-extrabold text-6xl mb-4
+  }
+
+  .banner__title--product{
+    @apply font-extrabold text-5xl
+  }
+
+  .banner__subtitle{
+    @apply bg-white text-base text-red-600 max-w-min py-2 px-3 rounded-2xl cursor-pointer 
+  }
+}
